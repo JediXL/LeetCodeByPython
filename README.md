@@ -1,2 +1,2 @@
 # LeetCodeByPython
-The python codes of problems on LeetCode 
+The python code of problems on LeetCode 
