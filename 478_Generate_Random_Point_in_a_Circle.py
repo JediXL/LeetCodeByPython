@@ -17,7 +17,7 @@ class Solution:
             res_x = random.uniform(self.x_min, self.x_max)
             res_y = random.uniform(self.y_min, self.y_max)
             dis = (res_x - self.x_center)**2 + (res_y - self.y_center)**2
-            if dis <= self.radius**2:
+            if dis**2 <= self.radius**2:
                 return [res_x, res_y]
 
         
