@@ -1,5 +1,11 @@
 import random
-import bisect  
+import bisect
+
+'''
+@auther: Jedi.L
+@Date: Tue, Feb 26, 2019 12:10
+@Email: xiangyangan@gmail.com
+'''
 
 
 # class Solution:
@@ -39,8 +45,8 @@ class Solution:
 class Solution2:
     def __init__(self, rects):
         self.rects, self.ranges, point_sum = rects, [], 0
-        for x1, y1, x2, y2 in rects:
-            point_sum += (x2 - x1 + 1) * (y2 - y1 + 1)
+        for x_bl, y_bl, x_tr, y_tr in rects:
+            point_sum += (x_tr - x_bl + 1) * (y_tr - y_bl + 1)
             self.ranges.append(point_sum)
 
     def pick(self):
