@@ -1,3 +1,11 @@
+
+'''
+@auther: Jedi.L
+@Date: Tue, Feb 26, 2019 5:28
+@Email: xiangyangan@gmail.com
+@Blog: www.tundrazone.com
+'''
+
 import random
 import bisect
 
