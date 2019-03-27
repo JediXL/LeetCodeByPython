@@ -56,7 +56,7 @@ class Solution2:
                 while cur_white in self.black:
                     cur_white += 1
                 self.map[b] = cur_white
-                cur_white += 1S
+                cur_white += 1
 
     def pick(self):
         """
@@ -66,7 +66,7 @@ class Solution2:
         return self.map[k] if k in self.black else k
 
 
-s = Solution2(7, [0,1,3,4])
+s = Solution2(7, [0, 1, 3, 4])
 n = 6
 while n:
     print(s.pick())
