@@ -39,6 +39,7 @@ class Solution:
             for b in range(0, lengh):
                 if self.orientation(points[a], points[b], points[c]) == 2:
                     c = b
+            
             for b in range(0, lengh):
                 if b != a and b != c and self.inbetween(
                         points[a], points[b],
