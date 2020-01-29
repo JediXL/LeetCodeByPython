@@ -1,19 +1,19 @@
-#  45_explanation_Jump_Game_II 
-#博客/develop
+# 45_explanation_Jump_Game_II 
 
-## Problem
+## Problem 
  [Jump Game II - LeetCode](https://leetcode.com/problems/jump-game-ii/)
-[image:2D82D956-CC58-4E37-A487-0263B0BC61B6-6208-0000122E1E133470/CBDC6306-DB45-45F0-8D6E-B4D6BB7FFD58.png]
+> Given an array of non-negative integers, you are initially positioned at the first index of the array.
+> Each element in the array represents your maximum jump length at that position.
+> Your goal is to reach the last index in the minimum number of jumps.
+> *Example:*
+> *Input:* [2,3,1,1,4]
+> *Output:* 2
+> *Explanation:* The minimum number of jumps to reach the last index is 2.
+>     Jump 1 step from index 0 to 1, then 3 steps to the last index.
+> *Note:*
+> You can assume that you can always reach the last index.
 
 ## Method
-我们可以认为“ nums”中每个项目的数字代表一个覆盖区域。 因此，为了解决这个问题，我们希望用最少的区域覆盖整个范围。值得注意的是，这我们虽然把这种算法称为贪婪算法，一般而言，贪婪算法找出的不是最优解。但是，在这道题目中，覆盖最远的下个区域是相比其他区域而言是占优策略[Strategic dominance - Wikiwand](https://www.wikiwand.com/en/Strategic_dominance), 所以，在这道题目中，通过贪婪可以得到最优解。
-
-算法的思路如下：
-
-1.根据当前位置及其区域，找到范围从`i` 到`（i + num）`的相邻区域。
-2.将这些区域的最远覆盖范围与最大范围进行比较：如果`（i + num）`大于最大范围，则设置下一个覆盖范围从`r`开始，最大范围等于`i + num`。
-3.将当前位置更新为`r`。
-4.继续这样做，直到覆盖整个区域。
 
 We can think the number of each item in `nums` represents a coverage area. Hence, to solve this problem, we want to cover the entire range with a minimum number of areas.  Note that although we call this algorithm the greedy algorithm, in general, the greedy algorithm does not find the optimal solution. However, in this topic, the next area covering the farthest is the dominant strategy compared to other areas [Strategic dominance-Wikiwand] (https://www.wikiwand.com/en/Strategic_dominance) . Hence, in this problem, the optimal solution can be obtained by greed.
 
