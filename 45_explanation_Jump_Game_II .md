@@ -15,7 +15,7 @@
 
 ## Method
 
-We can think the number of each item in `nums` represents a coverage area. Hence, to solve this problem, we want to cover the entire range with a minimum number of areas.  Note that although we call this algorithm the greedy algorithm, in general, the greedy algorithm does not find the optimal solution. However, in this topic, the next area covering the farthest is the dominant strategy compared to other areas [Strategic dominance-Wikiwand](https://www.wikiwand.com/en/Strategic_dominance). Hence, in this problem, the optimal solution can be obtained by greed.
+We can think the number of each item in `nums` represents a coverage area. Hence, to solve this problem, we want to cover the entire range with a minimum number of areas.  Note that although we call this algorithm the greedy algorithm, in general, the greedy algorithm does not find the optimal solution. However, in this topic, the next area covering the farthest is the dominant strategy compared to other areas [Strategic dominance](https://www.wikiwand.com/en/Strategic_dominance). Hence, in this problem, the optimal solution can be obtained by greed.
 
 The main idea of my algorithm as follows:
 
