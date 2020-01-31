@@ -37,7 +37,10 @@ class Solution:
 ```
 
 ### Greedy
+English:
 We can easily change our code in Problem 45 to get the solution.
+
+Chinese:
 我们也可以通过修改问题45 的代码通过贪婪算法得到答案。
 
 ```
