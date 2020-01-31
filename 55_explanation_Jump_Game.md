@@ -7,11 +7,13 @@
 ## Solution
 ### Back-forward
 
+In English：
 1. Set  des(destination) equals to the last item in the “nums”.
 2. From back to front finding i which can meet the condition: i + nums[i] >= des
 3. If we can find i satisfies the condition, set des = i. If i == 0, then return True, otherwise start the next loop.
 4. If there is no i can meet the condition, return False.
 
+In Chinese：
 1. 首先把 list 里最后一项作为目标。
 2. 由后向前寻找可以到达目标的位置i（满足 i + nums[i] >= des）。 
 3. 如果发现满足条件的位置  i  ，把目标更新为位置 i，如果 i 为 0，返回 True，否则然后开始下一个循环。
